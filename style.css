@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,400&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*varibles define*/
+:root {
+  --primary-color: #ac445b;
+  --secondary-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+  --primary-font: "Josefin Sans", sans-serif;
+  --secondry-font: "Ubuntu", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/*
+============================================
+           costom css design:
+============================================
+*/
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  line-height: 3rem;
+  margin: 0 10px;
+}
+
+h4 {
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+h5 {
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.main-btn,
+#Submit,
+#PlayAgain,
+.btn,
+#Next,
+#SaveAndNext {
+  display: block;
+  margin: 10px auto;
+  /* margin: auto; */
+  padding: 5px 20px;
+  line-height: 1.5625rem;
+  background-color: var(--primary-color);
+  box-decoration-break: 0.9875rem solid var(--primary-color);
+  color: var(--white-color);
+  border: 0.1875rem solid var(--primary-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0/19);
+  outline: none;
+  transition: all 0.4s ease-out 0s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px !important ;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.wrapper {
+  padding-top: 4.25rem;
+  padding-bottom: 3.25rem;
+}
+
+/*______________________________________________
+            custom css
+_____________________________________________________*/
+.mainDiv {
+  width: calc(100% - 40px);
+  margin: auto;
+  height: calc(100vh - 20px);
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerDiv {
+  /* border: 2px solid green; */
+  padding: 50px;
+  z-index: 2;
+  max-width: 500px;
+  /* max-height: 500px; */
+  background: #fff !important;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px -7px rgba(0, 0, 0, 0.24);
+}
+
+.innerDiv h2 {
+  font-size: 28px;
+  margin: 10px 0;
+  text-align: center;
+}
+.innerDiv li {
+  margin-top: 10px;
+  font-size: 20px;
+}
+input {
+  cursor: pointer;
+}
+.btnBox {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.showScore {
+  text-align: center;
+  background-color: #fff;
+  margin-top: 25px;
+  /* border: 2px solid yellow; */
+  /* display: hidden; */
+}
+.hidden {
+  display: none;
+}
